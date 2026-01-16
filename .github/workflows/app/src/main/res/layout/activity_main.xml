@@ -1,1 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner android:id="@+id/spTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLocal"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etOutroLocal"
+                android:hint="Outro local"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etNome"
+            android:hint="Nome do paciente"/>
+
+        <EditText android:id="@+id/etTelefone"
+            android:hint="Telefone"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:text="Enviar WhatsApp"/>
+    </LinearLayout>
+</ScrollView>
