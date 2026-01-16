@@ -1,1 +1,5 @@
-
+<resources>
+    <style name="Theme.UBSF" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/verde_whatsapp</item>
+    </style>
+</resources>
