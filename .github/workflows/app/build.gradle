@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace "br.com.ubsf.whatsapp"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "br.com.ubsf.whatsapp"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.11.0'
+}
